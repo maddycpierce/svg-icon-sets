@@ -1,20 +1,44 @@
-@-moz-viewport { width: device-width; scale: 1; }
-@-ms-viewport { width: device-width; scale: 1; }
-@-o-viewport { width: device-width; scale: 1; }
-@-webkit-viewport { width: device-width; scale: 1; }
-@viewport { width: device-width; scale: 1; }
-
 html {
-  font-family: "Overpass", sans-serif;
+  font-family: Overpass, sans-serif;
   color: #fff;
 }
 
 body {
-  background: linear-gradient(#ff9500, #ff5e3a);
+  background-image: linear-gradient(#ff9500, #ff5e3a);
+}
+
+.btn:hover {
+  color: #ff5e3a;
 }
 
 .btn-wrapper a {
   color: #fff;
-  background-color: none;
-  border-color: #fff;
+  background-color: transparent;
+  border-color: rgba(255, 255, 255, .75);
+  border-width: 3px;
+}
+
+.btn-wrapper a:hover {
+  background-color: #fff;
+  border-color: rgba(255, 255, 255, .75);
+  border-width: 3px;
+}
+
+.space-bubbles,
+.super-domes {
+  border-bottom: rgba(255, 255, 255, .25) 3px solid;
+}
+
+svg {
+  color: #fff;
+}
+
+@media only screen and (min-width: 60em) {
+
+  .space-bubbles,
+  .super-domes {
+    border-right: rgba(255, 255, 255, .25) 3px solid;
+    border-bottom: none;
+  }
+
 }
